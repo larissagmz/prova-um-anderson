@@ -65,6 +65,46 @@ table {
     width: 100%;
 }
 
+.header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Anima descendo */
+.header.slide-down {
+  animation: slideDown 0.4s ease forwards;
+}
+
+.header.slide-up {
+  animation: slideUp 0.4s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
 .header__div-content{
     display: flex;
     justify-content: space-between;
@@ -113,8 +153,15 @@ table {
     cursor: pointer;
 }
 
+a:hover{
+    border-bottom: 1px solid black;
+    transition: 0.5s;
+}
+
 a{
     text-decoration: none;
+    border-bottom: 1px solid transparent; 
+    transition: border-bottom 0.3s ease;
 }
 
 .button-doe{
