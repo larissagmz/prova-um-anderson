@@ -1,0 +1,154 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: "Inter", sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.img-header {
+   background-image: url(img/background.jpg);
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    background-size: auto 200%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 180px;
+}
+.header{
+    display: flex;
+    width: 100%;
+}
+
+.header__div-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.div-content__fig-img-blue{
+    text-align: center;
+}
+
+.fig-img-blue__text-november{
+    font-size:  13px;
+    font-weight: bold;
+}
+
+.img-blue{
+    width: 50px;
+    height: 50px;
+}
+
+.fig-img-blue__text-november span{
+    color: #7bb4ff;
+}
+
+.div-content__nav{
+    display: flex;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.637);
+    border-radius: 7px;
+    height: 40px;
+}
+
+.nav__list{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.nav__list li a{
+    color: black;
+    font-size: 15.4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button-doe{
+    background-color: #7bb4ff;
+    border: 1px solid #7bb4ff;
+    font-size: 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 2px 10px;
+}
+
+.button-doe span{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.div-text-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    letter-spacing: 2px;
+}
+
+.div-text-header__text-november{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.div-text-header__text-november span{
+    color: #058dc5;
+}
+
+.div-text-header p{
+    font-size: 19px;
+    font-weight: 600;
+}

@@ -1,0 +1,136 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 70px;
+}
+
+.main__description-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 600px;
+}
+
+.description-section__title{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.description-section__title span{
+    color: #7bb4ff;
+}
+
+.description-section__img-icon{
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.description-section__img-icon img{
+    width: 300px;
+    height: 300px;
+}
+
+.description-section__description{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    width: fit-content;
+    margin: 0 auto;
+    word-wrap: break-word;
+    text-align: center;
+    overflow-wrap: break-word;
+    display: inline-block;
+}
+
+.main__sintomas-section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sintomas-section__div-header{
+    display: flex;
+    align-items: center;
+    gap: 300px;
+}
+
+.sintomas-section__div-header h3{
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.sintomas-section__div-content{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.div-content__sintomas-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.div-content__sintomas-list li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.div-content__sintomas-list li p{
+    text-align: center;
+    font-size: 13.3px;
+    font-weight: 600;
+    width: 150px;
+}
+
+.div-content__img-men{
+    width: 400px;
+}
+
+.div-content__img-men img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-sintomas{
+    width: 70px;
+    height: 70px;
+}
+
+.img-sintomas img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.div-content__div-contact{
+    background-color: #d8d9de;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.div-content__div-contact h3{
+    font-size: 20px;
+    width: 190px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.div-contact__contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div-contact__contacts p{
+    background-color: rgb(190, 190, 190);
+    padding: 10px 0 10px 10px ;
+    border-radius: 10px;
+    font-weight: 600;
+}
