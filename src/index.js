@@ -34,14 +34,12 @@ window.addEventListener("scroll", () => {
         header.classList.remove("slide-down");
         header.classList.add("slide-up");
 
-        // Espera a animação terminar
         setTimeout(() => {
             header.classList.remove("fixed", "slide-up");
 
-            // 🔥 RESET: garante que ele fique visível no topo quando não estiver fixo
             header.style.transform = "none";
             header.style.opacity = "1";
-        }, 400); // mesmo tempo da animação
+        }, 400);
         isFixed = false;
     }
 });

@@ -134,3 +134,212 @@
     border-radius: 10px;
     font-weight: 600;
 }
+
+.main__tratamentos-section h3{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.div-img{
+    display: flex;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.tratamentos-section-img{
+    height: 500px;
+    background-repeat: no-repeat;
+     background-image: url(img/background.jpg);
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    border-top-right-radius: 40px ;
+    border-bottom-left-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
+
+
+#img-1{
+    background-image: url(img/cirugia.avif);
+}
+
+#img-2{
+    background-image:url(img/radio.avif) ;
+    width: 600px;
+}
+
+#img-3{
+    background-image: url(img/remedio.avif);
+     width: 700px;
+}
+
+.div-content__title{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.div-content__description{
+     color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.section-diagnostico h3{
+    font-size: 35px;
+    font-weight: 700;
+    color: #7bb4ff;
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.section-diagnostico__div-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-content__div-img-brasil{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.tratamentos-section-img__div-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.div-content__div-img-brasil figure{
+    position: relative;
+    border: 1px solid black;
+}
+
+#correto{
+    width: 60px;
+    position: absolute;
+    top: -33px;
+    left: -35px;
+}
+
+#negative{
+    width: 60px;
+    position: absolute;
+    top: -23px;
+    left: -35px;
+}
+
+.div-content__div-img-brasil{
+    width: 280px;
+    height: max-content;
+}
+
+.div-content__div-img-brasil figure{
+    height: 90px;
+    border-radius: 15px;
+    border: 3px solid #e7191f;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.div-content__div-img-brasil figure:first-child{
+    border-color: #0c689d;
+}
+
+.div-img-brasil__brasil{
+    width: 600px;
+}
+
+.main__section-prevencao {
+    background-color: #7bb4ff;
+    width: 100vw; 
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.section-prevencao{
+    display: flex;
+    gap: 50px;
+    padding: 30px;
+    align-items: center;
+}
+
+.section-prevencao__div-description{
+    width: 400px;
+}
+
+.section-prevencao__div-description h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.section-prevencao__div-description p{
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.main__section-prevencao__prevention-list{
+    display: flex;
+    gap: 20px;
+    width: max-content;
+}
+
+.main__section-prevencao__prevention-list li {
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 400px;
+    border-top-left-radius: 40px ;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10px;
+    gap: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+#dieta{
+    width: 90px;
+
+}
+
+#saude{
+    width: 80px;
+}
+
+#bebida{
+    width: 110px;
+}
+
+#azul-medio{
+    background-image:url(img/fundoazulclaro.png) ;
+        background-size: auto 120%;
+}
+
+#azul-escuro{
+    background-image: url(img/azulescuro.png);
+}
+
+#azul-bebe{
+    background-image: url(img/azulbebe.png);
+}
