@@ -43,4 +43,68 @@ window.addEventListener("scroll", () => {
         isFixed = false;
     }
 });
+
+const sendComment = () => {
+    const button = document.querySelector("#send");
+    const textarea = document.querySelector("textarea");
+
+    button.disabled = true;
+
+    textarea.addEventListener("input", () => {
+        button.disabled = textarea.value.trim() === "";
+    });
+
+    button.addEventListener("click", (e) => {
+        if (textarea.value.trim() !== "") {
+            renderComment();
+            textarea.value = "";
+            button.disabled = true;
+        }
+    });
+};
+
+const renderComment = () => {
+    const text = document.querySelector("textarea").value;
+    const list = document.querySelector(".div-list__duvidas-list");
+
+    const li = document.createElement("li");
+    const fig = document.createElement("figure");
+    const img = document.createElement("img");
+    const divContent = document.createElement("div");
+    const divUser = document.createElement("div");
+    const h4 = document.createElement("h4");
+    const p = document.createElement("p");
+    const deleteBtn = document.createElement("button");
+
+    // Configuração das classes
+    li.className = "duvidas-list__duvidas";
+    fig.className = "img-men";
+    divContent.className = "duvidas__content";
+    divUser.className = "duvidas__content-user";
+    deleteBtn.className = "btn-delete-comment";
+
+    h4.innerText = "Anderson Yoshiaki";
+    img.src = "./img/anderson.jpeg";
+    p.innerText = text;
+    deleteBtn.innerText = "Excluir";
+
+    deleteBtn.addEventListener("click", () => {
+        li.remove();
+    });
+
+    li.append(fig, divContent);
+    fig.append(img);
+    divContent.append(divUser, deleteBtn);
+    divUser.append(h4, p);
+
+    list.prepend(li);
+};
+
+const doe = document.querySelector(".button-doe");
+doe.addEventListener("click", (e) => {
+    navigator.clipboard.writeText("ffdfdbfdlsSLfbsd");
+
+    alert("pix copiado");
+});
 typeText();
+sendComment();

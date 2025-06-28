@@ -1,0 +1,82 @@
+.footer{
+    background-color: #676a6c;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 50px;
+    color: white;
+}
+
+.btn-delete-comment {
+    margin-top: 8px;
+    background-color: rgb(143, 20, 20);
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    width: 70px;
+}
+
+.footer__div-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-footer__informations{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    width: 30%;
+}
+
+#ifpr{
+    width: 130px;
+}
+
+
+.iformation__list-contact{
+    display: flex;
+    gap: 10px;
+}
+
+.iformation__list-contact li{
+    width: 40px;
+}
+
+.iformation__list-contact li img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer__div-content{
+    display: flex;
+    width: 30%;
+    gap: 20px;
+}
+
+.footer__div-content div{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.footer__div-content div strong{
+    font-weight: 600;
+}
+
+.footer__div-content div p{
+    width: 120px;
+    line-height: 20px;
+}
+
+@media (max-width: 1000px){
+    .footer{
+        width: 100%;
+    }
+}

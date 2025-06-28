@@ -167,17 +167,17 @@
 
 
 #img-1{
-    background-image: url(img/cirugia.avif);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/cirugia.avif);
 }
 
 #img-2{
-    background-image:url(img/radio.avif) ;
-    width: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(img/radio.avif) ;
+   
 }
 
 #img-3{
-    background-image: url(img/remedio.avif);
-     width: 700px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/remedio.avif);
+     
 }
 
 .div-content__title{
@@ -265,6 +265,7 @@
 
 .main__section-prevencao {
     background-color: #7bb4ff;
+    padding: 40px;
     width: 100vw; 
     position: relative;
     left: 50%;
@@ -342,4 +343,388 @@
 
 #azul-bebe{
     background-image: url(img/azulbebe.png);
+}
+
+.comment {
+  min-width: 300px;
+  
+}
+
+#carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#carousel-content {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+#carousel {
+  overflow: hidden;
+  flex: 1;
+  position: relative;
+}
+
+#carousel-content {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+
+#scroll-left,
+#scroll-right {
+position: absolute; 
+top: 50%; 
+transform: translateY(-50%); 
+background: none;
+border: none;
+font-size: 24px;
+cursor: pointer;
+color: #333;
+z-index: 10; 
+}
+
+#scroll-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#scroll-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#carousel::before,
+#carousel::after {
+content: '';
+position: absolute;
+top: 0;
+width: 50px;
+height: 100%;
+pointer-events: none;
+z-index: 1;
+transition: opacity 0.3s ease;
+opacity: 1; 
+}
+
+#carousel::before {
+left: 0;
+background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+#carousel::after {
+right: 0;
+background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+#carousel::before {
+  opacity: var(--show-left-gradient, 1);
+}
+
+#carousel::after {
+  opacity: var(--show-right-gradient, 1);
+}
+
+.img-men {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    overflow: hidden;   
+}
+
+.img-men img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+
+
+.main__section-depoimentos {
+    padding: 20px;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.main__section-depoimentos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+  height: 130px;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+}
+
+.main__section-depoimentos::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 130px; 
+  height: 130px; 
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.main__section-depoimentos h3{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    margin-bottom: 100px;
+}
+
+.comment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100px;
+    flex: 0 0 auto;
+}
+
+.comment strong{
+    color: #9de5f1;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.comment p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 23px;
+}
+
+.button-scroll{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.section-doutor{
+    background-color:  #030404;
+    height: 600px;
+    position: relative;
+}
+
+.section-doutor div:first-child {
+  background-color: #040505;
+  width: 85%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 650px;
+  z-index: 1;
+  color: white;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  box-sizing: border-box;
+  overflow: hidden; 
+}
+
+.img-dr {
+  height: 100%;
+  width: 370px;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.description-doctor {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+   line-height: 30px;
+   margin-left: 10px;
+}
+
+.description-doctor p:first-child{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.description-doctor strong{
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.description-doctor h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-duvida h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 7px;
+}
+
+.div-list__duvidas-list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.duvidas-list__duvidas{
+    width: 100%;
+    display: flex;
+}
+
+.duvidas__content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 20px;
+}
+
+.duvidas__content-user{
+    width: 60%;
+}
+
+.duvidas__content-user h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.duvidas__content-user p{
+   margin-top: 10px;
+   font-weight: 400;
+   font-size: 14px;
+}
+
+.duvidas__content-doctor{
+    display: flex;
+    gap: 20px;
+    width: 80%;
+}
+
+.duvidas__content-doctor img{
+    width: 40px;
+    height: 40px;
+}
+
+.duvidas__content-doctor div{
+    margin-top: 20px;
+}
+
+.duvidas__content-doctor div h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.duvidas__content-doctor div p{
+    margin-top: 10px;
+   font-weight: 400;
+   font-size: 14px;
+}
+
+.div-list__comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.div-list__comment textarea {
+  width: 400px;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 16px;
+  font-size: 16px;
+  resize: none; 
+  outline: none; 
+  font-family: inherit;
+}
+
+.div-list__comment textarea::placeholder {
+  color: #ccc;
+}
+
+.div-list__comment p{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.div-list__comment button{
+    padding: 5px 10px;
+    align-self: self-start;
+    margin-left: 40px;
+    border-radius: 12px;
+    background-color: #0079a9;
+    border: 1px none;
+    color: white;
+    font-size: 12px;
+}
+
+.div-list__comment button:hover{
+    background-color: #3c8baa;
+}
+
+button{
+    cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1000px){
+    .container{
+        width: 90%;
+    }
+    .section-prevencao{
+        flex-direction: column;
+    }
+
+    .main__section-prevencao__prevention-list{
+        flex-direction: column;
+    }
+    .sintomas-section__div-content{
+        flex-direction: column;
+    }
+    .div-img{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tratamentos-section-img{
+        width: 80%;
+    }
+    .div-img-brasil__brasil{
+        width: 70%;
+    }
+    
+.section-diagnostico__div-content{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 }
